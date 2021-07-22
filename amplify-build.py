@@ -40,7 +40,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='AWS Amplify App Build Script')
     parser.add_argument('--app-name', help='Amplify App Name', default='amplify-deploy', dest='app_name')
     parser.add_argument('--branch-name', help='Amplify Branch Name', default='main', dest='branch_name')
-    parser.add_argument('--dep_loc', help='Deployment package location', default='deployment.zip', dest='dep_loc')
+    parser.add_argument('--dep-loc', help='Deployment package location', default='deployment.zip', dest='dep_loc')
     args = parser.parse_args()
 
     app_id = list_apps(app_name=args.app_name)
